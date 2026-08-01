@@ -1,0 +1,4 @@
+include LICENSE NOTICE
+recursive-include src *.cpp *.cu *.h
+recursive-include benchmarks *.py *.md
+global-exclude __pycache__ *.py[cod]

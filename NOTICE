@@ -1,0 +1,16 @@
+segmented-linear-assignment
+Copyright 2026 segmented-linear-assignment contributors
+
+The implementation is informed by torch-linear-assignment by Ivan Karpukhin,
+which is distributed under the Apache License, Version 2.0:
+https://github.com/ivan-chai/torch-linear-assignment
+
+Both projects implement the rectangular shortest augmenting path algorithm
+described by D. F. Crouse, "On implementing 2D rectangular assignment
+algorithms", IEEE Transactions on Aerospace and Electronic Systems 52(4),
+2016, doi:10.1109/TAES.2016.140952.
+
+This project extends the execution model and storage layout for variable-size
+grouped jobs, packed workspaces, and size-adaptive cooperative CUDA blocks. The
+solver keeps the upstream floating-point dtype and shortest augmenting path
+arithmetic.

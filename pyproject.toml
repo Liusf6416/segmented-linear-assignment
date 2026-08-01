@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=64", "wheel", "torch>=2.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "segmented-linear-assignment"
+version = "0.3.0"
+description = "Segmented batched linear assignment for PyTorch and CUDA"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "Apache-2.0"}
+authors = [{name = "segmented-linear-assignment contributors"}]
+keywords = [
+    "PyTorch",
+    "CUDA",
+    "linear assignment",
+    "Hungarian algorithm",
+    "segmented batch",
+    "ragged batch",
+    "sparse matrix",
+    "graph matching",
+]
+dependencies = ["torch>=2.0"]
+
+[tool.setuptools]
+packages = ["segmented_linear_assignment"]
+package-dir = {segmented_linear_assignment = "src"}
+include-package-data = false
